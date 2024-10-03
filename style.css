@@ -63,6 +63,29 @@ body {
   color: #a435f0;
   cursor: pointer;
 }
+
+.myLearning {
+  position: relative;
+}
+
+.myLearning__popup {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #bbc2c6;
+  width: 200px;
+  padding: 10px;
+  top: 150%;
+  right: 0;
+  display: none;
+}
+
+.myLearning:hover {
+  .myLearning__popup {
+  display: block;
+  color: none;
+  }
+}
+
 .profile-detail__profile {
   width: 35px;
   height: 35px;
