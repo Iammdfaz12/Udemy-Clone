@@ -81,8 +81,8 @@ body {
 
 .myLearning:hover {
   .myLearning__popup {
-  display: block;
-  color: none;
+    display: block;
+    color: none;
   }
 }
 
@@ -119,6 +119,7 @@ body {
 .categories-items:hover {
   color: #a528f8;
   cursor: pointer;
+  transition: 1s;
 }
 
 .profile-detail__avatar {
@@ -191,6 +192,19 @@ body {
   position: absolute;
   top: 2.4rem;
   left: 4.8rem;
+  animation-name: zoom;
+  animation-duration: 2s;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 #sale-image__desc1 {
